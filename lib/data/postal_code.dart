@@ -7,7 +7,7 @@ part 'postal_code.g.dart';
 @freezed
 class PostalCode with _$PostalCode {
   const factory PostalCode({
-    required String? code,
+    required String code,
     required List<PostalCodeData> data,
   }) = _PostalCode;
 
@@ -18,9 +18,9 @@ class PostalCode with _$PostalCode {
 @freezed
 class PostalCodeData with _$PostalCodeData {
   const factory PostalCodeData({
-    required String? prefcode,
-    required PostalCodeAddress? ja,
-    required PostalCodeAddress? en,
+    required String prefcode,
+    required PostalCodeAddress ja,
+    required PostalCodeAddress en,
   }) = _PostalCodeData;
 
   factory PostalCodeData.fromJson(Map<String, dynamic> json) =>
@@ -30,11 +30,11 @@ class PostalCodeData with _$PostalCodeData {
 @freezed
 class PostalCodeAddress with _$PostalCodeAddress {
   const factory PostalCodeAddress({
-    required String? prefecture,
-    required String? address1,
-    required String? address2,
-    required String? address3,
-    required String? address4,
+    required String prefecture,
+    required String address1,
+    required String address2,
+    required String address3,
+    required String address4,
   }) = _PostalCodeAddress;
 
   factory PostalCodeAddress.fromJson(Map<String, dynamic> json) =>

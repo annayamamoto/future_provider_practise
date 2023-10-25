@@ -26,4 +26,8 @@ class Logic {
     var jsonData = json.decode(response.body);
     return PostalCode.fromJson(jsonData);
   }
+
+  bool willProceed(String postalCode) {
+    return postalCode.length == 7;
+  }
 }
